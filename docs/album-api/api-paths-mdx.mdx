@@ -4,7 +4,6 @@ sidebar_position: 2
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-// import { OpenApiResponse } from '@redocly/developer-portal/ui';
 
 # API Paths
 
@@ -12,47 +11,39 @@ List of paths provided by the API (and with details):
 
 ## `/api/actions/`
 
-<Tabs
-  defaultValue="apple"
-  values={[
-    { label: 'Get', value: 'apple' },
-    { label: 'Post', value: 'orange' },
-  ]}>
-  <TabItem value="apple">
-    ```yml title: "get"
-    get:
-      operationId: actions_list
-      summary: Get Actions List
-      description: Retrieves a list of actions.
-      tags:
-      - actions
-      responses: #API's response based on code
-    ```
-    List of responses are [here](/docs/album-api/api-responses#get).
-    {/* <OpenApiResponse definitionId="petstore" pointer="../../src/components/responses/album-api-final" /> */}</TabItem>
-  <TabItem value="orange">
-    ```yml title: "post"
-        post:
-        operationId: actions_create
-        summary: Create an Action
-        description: Creates a new action.
-        tags:
-        - actions
-        requestBody:
-        content:
-            application/json:
-            schema:
-                $ref: '#/components/schemas/ActionCreate'
-            application/x-www-form-urlencoded:
-            schema:
-                $ref: '#/components/schemas/ActionCreate'
-            multipart/form-data:
-            schema:
-                $ref: '#/components/schemas/ActionCreate'
-        responses: #API's response based on code
-    ```
-    List of responses are [here](/docs/album-api/api-responses#post).</TabItem>
-  </Tabs>
+    <Tabs
+          defaultValue="apple"
+          values={[
+            { label: 'Get', value: 'apple' },
+            { label: 'Post', value: 'orange' },
+          ]}>
+          <TabItem value="apple">
+              ```yml title: "get"
+get:
+  operationId: actions_list
+  summary: Get Actions List
+  description: Retrieves a list of actions.
+  tags:
+  - actions
+  responses: #API's response based on code
+```
+List of responses are [here](/docs/album-api/api-responses#get).
+      </TabItem>
+      <TabItem value="orange">This is an orange 🍊</TabItem>
+          </Tabs>
+
+- `get` 
+
+```yml title: "get"
+get:
+    operationId: actions_list
+    summary: Get Actions List
+    description: Retrieves a list of actions.
+    tags:
+    - actions
+    responses: #API's response based on code
+```
+List of responses are [here](/docs/album-api/api-responses#get).
 
 - `post` 
 
