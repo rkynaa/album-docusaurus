@@ -3,10 +3,6 @@ sidebar_label: 'Test'
 sidebar_position: 2
 ---
 
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
-
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
-
 # Test
 
 Let's see [My react page](/my-react-page).
