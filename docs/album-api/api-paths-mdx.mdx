@@ -28,36 +28,33 @@ List of paths provided by the API (and with details):
       - actions
       responses: #API's response based on code
     ```
-    List of responses are [here](/docs/album-api/api-responses#get).
-    {/* <OpenApiResponse definitionId="petstore" pointer="../../src/components/responses/album-api-final" /> */}</TabItem>
-  <TabItem value="orange">
-  </Tabitem>
-    
-  </Tabs>
+    List of responses are [here](/docs/album-api/api-responses#get).</TabItem>
+  <TabItem value="orange">Test</Tabitem>
+</Tabs>
 
 - `post` 
 
 ```yml title: "post"
-        post:
-        operationId: actions_create
-        summary: Create an Action
-        description: Creates a new action.
-        tags:
-        - actions
-        requestBody:
-        content:
-            application/json:
-            schema:
-                $ref: '#/components/schemas/ActionCreate'
-            application/x-www-form-urlencoded:
-            schema:
-                $ref: '#/components/schemas/ActionCreate'
-            multipart/form-data:
-            schema:
-                $ref: '#/components/schemas/ActionCreate'
-        responses: #API's response based on code
-    ```
-    List of responses are [here](/docs/album-api/api-responses#post).
+post:
+  operationId: actions_create
+  summary: Create an Action
+  description: Creates a new action.
+  tags:
+  - actions
+  requestBody:
+  content:
+      application/json:
+      schema:
+          $ref: '#/components/schemas/ActionCreate'
+      application/x-www-form-urlencoded:
+      schema:
+          $ref: '#/components/schemas/ActionCreate'
+      multipart/form-data:
+      schema:
+          $ref: '#/components/schemas/ActionCreate'
+  responses: #API's response based on code
+```
+List of responses are [here](/docs/album-api/api-responses#post).
 
 ## `/api/actions/{id}/`
 
