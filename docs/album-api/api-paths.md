@@ -9,6 +9,14 @@ List of paths provided by the API (and with details):
 
 ## `/api/actions/`
 
+<details>
+    <summary>
+        Test
+    </summary>
+    <div>
+    </div>
+</details>
+
 - `get` 
 
 ```yml title: "get"
