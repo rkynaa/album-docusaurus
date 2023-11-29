@@ -4,6 +4,7 @@ sidebar_position: 2
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import { OpenApiResponse } from '@redocly/developer-portal/ui';
 
 # API Paths
 
@@ -18,17 +19,18 @@ List of paths provided by the API (and with details):
             { label: 'Post', value: 'orange' },
           ]}>
           <TabItem value="apple">
-        ```yml title: "get"
-get:
-  operationId: actions_list
-  summary: Get Actions List
-  description: Retrieves a list of actions.
-  tags:
-  - actions
-  responses: #API's response based on code
-```
-List of responses are [here](/docs/album-api/api-responses#get).
-      </TabItem>
+            ```yml title: "get"
+            get:
+              operationId: actions_list
+              summary: Get Actions List
+              description: Retrieves a list of actions.
+              tags:
+              - actions
+              responses: #API's response based on code
+            ```
+            List of responses are [here](/docs/album-api/api-responses#get).
+            <OpenApiResponse definitionId="petstore" pointer="../../src/components/responses/album-api-final" />
+                  </TabItem>
       <TabItem value="orange">This is an orange 🍊</TabItem>
           </Tabs>
 
