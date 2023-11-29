@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'API Responses'
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # API Responses
