@@ -59,6 +59,28 @@ const config = {
         },
       }),
     ],
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          {
+            spec: 'openapi/album-api-final.yaml',
+            route: '/api/',
+          },
+        ],
+        // Theme Options for modifying how redoc renders them
+        theme: {
+          // Change with your site colors
+          primaryColor: '#1890ff',
+          options: {
+            hideDownloadButton: true,
+            hideSchemaTitles: true,
+            noAutoAuth: true
+          }
+        },
+      },
+    ],
   ],
 
   themeConfig:
@@ -79,6 +101,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+          { to: "/api", label: "API Reference", position: "left" },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://www.penateam.com/',
